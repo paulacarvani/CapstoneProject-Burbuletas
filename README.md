@@ -24,7 +24,7 @@
     <li> <a href="http://github.com/122-63">Andrea Angola</a> - Front-End</li>
     <li> <a href="http://github.com/paulacarvani">Paula Carvajal</a> - Back-End</li>
     <li> <a href="http://github.com/sandrahoyos">Sandra Hoyos</a> - DB Manager</li>
-    <li> <a href="http//github.com/Nel10">Shannel Bejarano</a> - DevOps</li>
+    <li> <a href="http://github.com/nel10">Shannel Bejarano</a> - DevOps</li>
     </ul>
 </body>
   
