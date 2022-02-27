@@ -34,6 +34,10 @@
     <ul>
         <li>Javascript</li>
         <li>React</li>
+        <p> It is an open source library that has one of the largest communities of developers in the fornt-End, it is supported by large companies such as its creator Facebook and others like Netflix, Airbnb and more.
+        Its learning curve is between Angular and Vue, being Angular the most complex.
+        It has reactive programming and component-based development that facilitates code reuse.
+        It is better in forms and validations.</p>
     </ul>
     <h4><b> Back-End </b></h4>
     <ul>
@@ -51,6 +55,8 @@
     </ul>
     <h4><b> Another alternatives evaluated </b></h4>
     <ul>
+      <li>Front-End: Vue </li>
+      <p>Vue has a low learning curve that makes it ideal for the application, but it does not have a large community and for employment issues it falls short.</p>
       <li>Back-End: Python and Flask</li>
       <p>This option was one of the first because the previous experience with this technologies,
       but searching more opportunities to learn another languages and frameworks we decided for NodeJs, also because the community and documentation available.</p>
