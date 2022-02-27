@@ -55,9 +55,9 @@
     </ul>
     <h4><b> Another alternatives evaluated </b></h4>
     <ul>
-      <li>Front-End: <b>Vue</b></li>
+      <li><b>Front-End:Vue</b></li>
       <p>Vue has a low learning curve that makes it ideal for the application, but it does not have a large community and for employment issues it falls short.</p>
-      <li>Back-End: <b>Python and Flask</b></li>
+      <li><b>Back-End:Python and Flask</b></li>
       <p>This option was one of the first because the previous experience with this technologies,
       but searching more opportunities to learn another languages and frameworks we decided for NodeJs, also because the community and documentation available.</p>
     </ul>
