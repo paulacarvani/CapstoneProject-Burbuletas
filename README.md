@@ -61,11 +61,9 @@
       <li><b>Back-End:Python and Flask</b></li>
       <p>This option was one of the first because the previous experience with this technologies,
       but searching more opportunities to learn another languages and frameworks we decided for NodeJs, also because the community and documentation available.</p>
-    
-    <li><b>DataBases: MySQL </b></li>
+      <li><b>DataBases: MySQL </b></li>
       <p>MySQL in the beginning we thought about working with MySQL because we had already worked with it but we decided for MongoDB because the individual documents have their own structure. In this way, it is possible to create new fields with any value, while for a relational database like MySQL, a complete restructuring is needed. Although with MongoDB the key must be unique within a document, it is possible for it to appear in other documents, which is not possible in MySQL databases and must be regulated by means of joins between the different tables, which in MongoDB can optionally be created in the form of embedded documents or references.
-      So it is a wonderful opportunity to work with MongoDB. </p>
-      </ul>
+      So it is a wonderful opportunity to work with MongoDB.</p>
   </section>
   <section>
     <h3> Challenge </h3>
