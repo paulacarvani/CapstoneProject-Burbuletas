@@ -52,7 +52,12 @@
     </ul>
     <h4><b> DevOps </b></h4>
     <ul>
-      <li>AWS</li>
+      <li>OS Ubuntu</li> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
+      <li>AWS server</li>
+      <li>Nginx web server</li>
+      <li>UFW firewall</li>
+      <li>Datadog monitoring</li>
+      
     </ul>
     <h4><b> Another alternatives evaluated </b></h4>
     <ul>
