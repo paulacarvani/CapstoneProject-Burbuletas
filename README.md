@@ -78,7 +78,11 @@
   </section>
   <section>
     <h3> Infrastructure </h3>
-    <p> In construction </p>
+    <img src="https://i.ibb.co/s3dswYy/Infraestructura.png"
+         border="0"
+         alt="Infraestructura"
+         width= 50%
+         height= 50%>
   </section>
   <section>
     <h3> Existing Solutions </h3>
