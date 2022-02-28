@@ -52,12 +52,11 @@
     </ul>
     <h4><b> DevOps </b></h4>
     <ul>
-      <li>OS Ubuntu</li> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png">
+      <li>OS Ubuntu <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png" width= 1% height= 1%></li>
       <li>AWS server</li>
       <li>Nginx web server</li>
       <li>UFW firewall</li>
-      <li>Datadog monitoring</li>
-      
+      <li>Datadog monitoring</li>  
     </ul>
     <h4><b> Another alternatives evaluated </b></h4>
     <ul>
@@ -91,6 +90,9 @@
   </section>
   <section>
     <h3> Existing Solutions </h3>
-    <p> In construction </p>
+    <a href="https://onthegarden.co/project/materas-personalizadas/"><img src="https://i.ibb.co/pdtWKq8/existentes.png" alt="existentes" border="0" width= 20% height= 20%></a>
+    <a href="https://mygarden.com.co/"><img src="https://i.ibb.co/55XfgzN/existentes-1.png" alt="existentes-1" border="0" width= 20% height= 20%></a>
+    <a href="https://jardineros.com.co/vivero-online/plantas-de-renovacion-y-purificadoras/"><img src="https://i.ibb.co/brb1PrS/existentes-2.png" alt="existentes-2" border="0" width= 20% height= 20%></a>
+    <a href="https://latiendadelcactus.com/"><img src="https://i.ibb.co/8YRRDjs/existentes-3.png" alt="existentes-3" border="0" width= 20% height= 20%></a>
   </section>
 </body>
