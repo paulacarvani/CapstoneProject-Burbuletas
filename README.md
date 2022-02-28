@@ -68,17 +68,28 @@
       <li><b>DataBases: MySQL </b></li>
       <p>MySQL in the beginning we thought about working with MySQL because we had already worked with it but we decided for MongoDB because the individual documents have their own structure. In this way, it is possible to create new fields with any value, while for a relational database like MySQL, a complete restructuring is needed. Although with MongoDB the key must be unique within a document, it is possible for it to appear in other documents, which is not possible in MySQL databases and must be regulated by means of joins between the different tables, which in MongoDB can optionally be created in the form of embedded documents or references.
       So it is a wonderful opportunity to work with MongoDB.</p>
+      <li><b>DevOps</b></li>
+      <p>The other alternative I have for the development and deployment of our web application is DigitalOcean as it is very prominent among private companies and generates lower cost compared to the aws server.</p>
   </section>
   <section>
     <h3> Challenge </h3>
     <p>This project was designed to solve a need for an entrepreneurship, which seeks to publicize its products beyond social networks.</p>
     <p>We dont want to create a new entrepreneurship, just take one that already exists</p>
-    <p>with this web aplication we want to help not only the owner of the business, also the clients, who at the end are going to be the ones who can navigate in this web, choosing his products in a wish list, make contact with the sales person and by the way known another products</p>
+    <p>With this web aplication we want to help not only the owner of the business, also the clients, who at the end are going to be the ones who can navigate in this web, choosing his products in a wish list, make contact with the sales person and by the way known another products</p>
     <p>For the location of the entrepreneurship, this aplication is first think for the citys of Sevilla and Roldanillo in Valle del Cauca - Colombia, expecting that can grow to a national level.</p>
   </section>
   <section>
     <h3> Risks </h3>
-    <p> In construction </p>
+    <h4><i>Technical risks</i></h4>
+    <ul>
+      <li>A new challenge to manage new technologies and the connections of them</li>
+      <li>The risk of non response in the server</li>
+    </ul>
+    <h4><i>Non technical risks</i></h4>
+    <ul>
+      <li>Time management in the team</li>
+      <li>Don’t complete with the planned for the MVP</li>
+    </ul>
   </section>
   <section>
     <h3> Infrastructure </h3>
