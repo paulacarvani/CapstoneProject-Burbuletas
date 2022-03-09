@@ -10,7 +10,7 @@ const Navbar = ({}) => {
         <div className='wrapper_Navbar'>
           <div className='logo'>
             <img 
-              src="../images/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"
+              src="https://i.postimg.cc/sgY6NTJ1/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"
               alt="Logo burbuletas"
               />
           </div>

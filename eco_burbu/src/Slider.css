@@ -22,7 +22,7 @@
 }
 
 .Image {
-    height: 80%;
+    height: 20%;
 }
 
 .InfoContainer {
@@ -51,4 +51,16 @@
 }
 .Arrow_right {
     right: 10px;
+}
+
+.Title {
+
+}
+
+.Description {
+
+}
+
+.Button {
+
 }

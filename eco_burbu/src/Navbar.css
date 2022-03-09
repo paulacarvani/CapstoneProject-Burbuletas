@@ -19,9 +19,9 @@
   align-items: center;
 }
 
-.logo div{
-  max-width: 150px;
-  max-height: 150px;
+.logo img{
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .SearchContainer {
@@ -46,6 +46,7 @@
   font-size: 14px;
   cursor: pointer;
 }
+
 
 .MenuItem {
   flex: 1;

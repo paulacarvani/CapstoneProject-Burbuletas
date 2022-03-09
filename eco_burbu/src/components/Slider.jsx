@@ -11,10 +11,14 @@ const Slider = () => {
             <div className="Slider">
                 <div className="ImgContainer" >
                     <div className="Image">
-                        <img src="https://picsum.photos/id/0/600" />   
+                        <img src="https://i.postimg.cc/RZNNZYNb/pexels-jessica-cortez-899567.jpg" />   
                     </div>
                 </div>
-                <div className="InfoContainer"></div>
+                <div className="InfoContainer">
+                    <h1 className="Title" >Temporada de suculentas</h1>
+                    <p className="Description">Solo por esta semana 20% de descuento, en todas las suculentas!!! </p>
+                    <button className="Butoon">Ver más</button>
+                </div>
             </div>
         </div>
         <div className="Arrow Arrow_right">
