@@ -7,7 +7,7 @@ const authRoute = require("./routes/auth");
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_LOCAL)
+mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log("DBConnection Succesfull!"))
     .catch((err) => {
         console.log(err);
