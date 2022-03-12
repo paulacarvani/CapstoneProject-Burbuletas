@@ -3,7 +3,7 @@ import '../Navbar.css';
 import { Search, ShoppingCart  }from '@mui/icons-material/';
 import { Badge } from '@mui/material';
 
-const Navbar = ({}) => {
+const Navbar = () => {
   return (
     <section className="header">
       <div className='container'>
