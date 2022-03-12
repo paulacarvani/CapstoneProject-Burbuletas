@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper_Navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.wrapper_Navbar > div {
+  width: 33.3%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.logo img{
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.SearchContainer {
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.SearchContainer span {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.inputSearch {
+  border: none;
+}
+
+.MenuItem {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.MenuItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}

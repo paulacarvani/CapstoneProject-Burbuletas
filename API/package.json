@@ -1,0 +1,29 @@
+{
+  "name": "CapstoneProject-Burbuletas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulacarvani/CapstoneProject-Burbuletas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulacarvani/CapstoneProject-Burbuletas/issues"
+  },
+  "homepage": "https://github.com/paulacarvani/CapstoneProject-Burbuletas#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "cryptojs": "^2.5.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4",
+    "nodemon": "^2.0.15"
+  }
+}
