@@ -2,6 +2,7 @@ import React from 'react'
 import '../Navbar.css';
 import { Search, ShoppingCart  }from '@mui/icons-material/';
 import { Badge } from '@mui/material';
+import { Facebook, Instagram, WhatsApp } from '@mui/icons-material/';
 
 const Navbar = () => {
   return (
@@ -14,7 +15,17 @@ const Navbar = () => {
               alt="Logo burbuletas"
               />
           </div>
-          <div>Redes</div>
+          <div className="SocialContainer">
+            <div className="SocialIcon">
+              <Facebook fontSize="large" />
+            </div>
+            <div className="SocialIcon">
+              <Instagram fontSize="large"/>
+            </div>
+            <div className="SocialIcon">
+              <WhatsApp fontSize="large"/>
+            </div> 
+          </div>
           <div>
             <span>ES</span>
             <div className='SearchContainer'>
