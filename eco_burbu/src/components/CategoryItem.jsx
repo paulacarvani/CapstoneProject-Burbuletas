@@ -14,6 +14,9 @@ const Image = styled.img`
 const Title = styled.h1`
     color: #FBF9F9;
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    padding: 0.5em;
+    border-radius: 05em;
 `;
 
 const Button = styled.button`

@@ -25,12 +25,26 @@ export const sliderItems = [
 
 export const Categorias = [
   {
+    desc: "jarajsdoeiomnf",
+    id: 1,
+    title: "Plantitas",
+    img: "https://i.postimg.cc/9FbMCpBY/Plantitas.jpg",
+    background: "#ffdec8"
+  },
+  {
     desc: "ajhuefrjsiofj",
     id: 2,
-    title: "Materitas",
-    img: "https://picsum.photos/id/40/600",
-    background: "B5EAD7"
-  }
+    title: "Materitos",
+    img: "https://i.postimg.cc/52jx1Myf/Materitos.jpg",
+    background: "#ffdec8"
+  },
+  {
+    desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii " ,
+    id: 3,
+    title: "Repisas",
+    img: "https://i.postimg.cc/MHryLSXv/Repisas.jpg",
+    background: "#ffdec8"
+  },
 ]
 
 export const popularProducts = [

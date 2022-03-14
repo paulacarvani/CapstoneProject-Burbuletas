@@ -1,5 +1,5 @@
 import  styled  from "styled-components"
-import { sliderItems } from "../data"
+import { Categorias } from "../data"
 import CategoryItem from "./CategoryItem"
 
 const Container = styled.div`
@@ -11,7 +11,7 @@ const Container = styled.div`
 const Categories = () => {
   return (
     <Container>
-        {sliderItems.map(item=>(
+        {Categorias.map(item=>(
             <CategoryItem key={item.id} item={item}/>
         ))}
     </Container>

@@ -9,6 +9,7 @@ import {
 
 const Container = styled.div`
     display: flex;
+    background-color: #e2f0cb;
 `;
 const Left = styled.div`
     flex: 1;
@@ -29,6 +30,7 @@ const Imag = styled.img`
     width: 50%;
     height: 50%;
     display: flex;
+    border-radius:5em;
 `;
 const SocialContainer = styled.div`
     display: flex;
@@ -45,6 +47,7 @@ const SocialIcon = styled.div`
     margin-right: 20px;
 `;
 const Logo = styled.div`
+
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;

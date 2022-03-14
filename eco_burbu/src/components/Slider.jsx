@@ -29,7 +29,7 @@ const Slider = () => {
             <div key={item.id} className= { "Slide " + item.background}>
                 <div className="ImgContainer" >
                     <div className="Image" >
-                        <img src={item.img} />   
+                        <img src={item.img} alt="slider"/>   
                     </div>
                 </div>
                 <div className="InfoContainer">

@@ -55,10 +55,10 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: all 250ms ease;
+  transition: all 100ms ease;
   &:hover {
     background-color: #e9f5f5;
-    transform: scale(1.8);
+    transform: scale(1.4);
   }
 `;
 
