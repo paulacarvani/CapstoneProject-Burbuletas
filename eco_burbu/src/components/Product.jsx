@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AddShoppingCart, FavoriteBorder } from '@mui/icons-material/';
+import { Search, FavoriteBorder } from '@mui/icons-material/';
 
 const Info = styled.div`
   width: 100%;
@@ -69,7 +69,7 @@ const Product = ({item}) => {
       <Image src={item.img}/>
       <Info>
         <Icon>
-          <AddShoppingCart />
+          <Search />
         </Icon>
         <Icon>
           <FavoriteBorder />

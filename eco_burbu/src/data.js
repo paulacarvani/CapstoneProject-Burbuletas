@@ -4,21 +4,21 @@ export const sliderItems = [
       id: 1,
       title: "Plantas",
       img: "https://i.postimg.cc/C12W7Kcq/cactus-pexels-bruno-cervera-4514907.jpg",
-      background: "B5EAD7"
+      background: "#ffdec8"
     },
     {
       desc: "ajhuefrjsiofj",
       id: 2,
       title: "Materitas",
       img: "https://picsum.photos/id/40/600",
-      background: "FFDAC1"
+      background: "#ffdec8"
     },
     {
       desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii " ,
       id: 3,
       title: "Estanterias",
       img: "https://i.postimg.cc/RZNNZYNb/pexels-jessica-cortez-899567.jpg",
-      background: "E2F0CB"
+      background: "#ffdec8"
     }
 ]
 

@@ -14,19 +14,21 @@ const Left = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px
+    padding: 20px;
 `;
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    margin-left: 150px;
 `;
 const Right = styled.div`
     flex: 1;
     padding: 20px;
 `;
 const Imag = styled.img`
-    width: 150PX;
-    height: 150px;
+    width: 50%;
+    height: 50%;
+    display: flex;
 `;
 const SocialContainer = styled.div`
     display: flex;
@@ -36,14 +38,16 @@ const SocialIcon = styled.div`
     height: 50px;
     border-radius: 50%;
     color: white;
-    background-color: #${props=>props.color};
+    background-color: #${(props) => props.color};
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
 `;
 const Logo = styled.div`
-    align-item: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 `;
 
 const Descrip = styled.p`
@@ -63,16 +67,16 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>
-                <Imag src="https://i.postimg.cc/sgY6NTJ1/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"></Imag>
-            </Logo>
+            <Title>Burbuletas</Title>
             <Descrip>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut quos incidunt voluptate temporibus.
                 Non excepturi voluptatibus quam earum reiciendis eaque. Laudantium hic itaque quasi maiores molestiae officiis alias soluta.
             </Descrip>
         </Left>
         <Center>
-            <Title>Burbuletas</Title>
+            <Logo>
+                <Imag src="https://i.postimg.cc/sgY6NTJ1/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"></Imag>
+            </Logo>
             <SocialContainer>
                 <SocialIcon color="3B5999">
                     <Facebook fontSize="large"  />
@@ -85,17 +89,18 @@ const Footer = () => {
                 </SocialIcon>
             </SocialContainer>
         </Center>
-        <Right />
+        <Right>
             <Title>Contacto</Title>
-            <ContactItem><Map />
+            <ContactItem><Map style={{marginRight:"10px"}}/>
                 carrera 203e #45-147 Cali - Colobia
             </ContactItem>
-            <ContactItem><Phone />
+            <ContactItem><Phone style={{marginRight:"10px"}}/>
                 +57 340 4855 214
             </ContactItem>
-            <ContactItem><Email />
+            <ContactItem><Email style={{marginRight:"10px"}}/>
                 burbuletas@gmail.com
             </ContactItem>
+        </Right>
     </Container>
   )
 }
