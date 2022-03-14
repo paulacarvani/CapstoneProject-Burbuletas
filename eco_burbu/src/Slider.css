@@ -3,17 +3,22 @@
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .Wrapper_Slider {
     height: 100%;
+    display: flex;
+    transition: all 1.5s ease;
+    /* transform: translateX(slideIndex ) */
 }
 
-.Slider {
+.Slide {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #f8d7bb;
 }
 
 .ImgContainer {
@@ -25,6 +30,11 @@
     height: 20%;
 }
 
+/* .Image img {
+   max-width: 1500px;
+   max-height: 1500px;
+} */
+
 .InfoContainer {
     flex: 1;
     padding: 50px;
@@ -33,7 +43,7 @@
 .Arrow {
     width: 50px;
     height: 50px;
-    background-color: #fff7f7;
+    background-color: #fff7ff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -44,6 +54,7 @@
     margin:auto;
     cursor: pointer;
     opacity: 0.6;
+    z-index: 2;
 }
 
 .Arrow_left {
@@ -54,13 +65,20 @@
 }
 
 .Title {
-
+    font-size: 50px;
 }
 
 .Description {
-
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight:500;
+    letter-spacing: 2px;
 }
 
 .Button {
-
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 30px;
 }
