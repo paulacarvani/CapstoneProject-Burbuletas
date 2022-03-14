@@ -48,6 +48,7 @@ const Logo = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    image-rendering: pixelated;
 `;
 
 const Descrip = styled.p`

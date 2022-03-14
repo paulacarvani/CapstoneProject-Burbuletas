@@ -13,7 +13,7 @@ const Info = styled.div`
   align-items: center;
   background-color: rgba(0,0,0,0.2);
   justify-content: center;
-  transition: all 0.5s ease;
+  transition: all 250ms ease;
   cursor: pointer;
 `;
 
@@ -55,12 +55,13 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: all 0.5s ease;
+  transition: all 250ms ease;
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.8);
   }
 `;
+
 
 const Product = ({item}) => {
   return (
