@@ -8,24 +8,27 @@ const Container = styled.div`
 `;
 const Image = styled.img`
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
 `;
 const Title = styled.h1`
     color: #FBF9F9;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
-    padding: 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 05em;
+    box-shadow: 0px 0px 0px 0.5px;
 `;
 
 const Button = styled.button`
     border: none;
     padding: 10px;
-    background-color: #fff;
-    color: gray;
+    background-color: antiquewhite;
+    color: #5d8343;
     cursor: pointer;
     font-weight: 600;
+    box-shadow: 0px 0px 0px 0.5px coral;
+    border-radius: 1em;
 
 `;
 
