@@ -1,23 +1,24 @@
 export const sliderItems = [
     {
-      desc: "jarajsdoeiomnf",
-      id: 1,
-      title: "Plantas",
-      img: "https://i.postimg.cc/C12W7Kcq/cactus-pexels-bruno-cervera-4514907.jpg",
-      background: "#ffdec8"
-    },
-    {
-      desc: "ajhuefrjsiofj",
+      desc: "Nuestras materas dan un toque especial, promete traernos la magia en una pieza única capaz de trasmitirnos calidez, dónde cada detalle es pintado a mano, esmaltado por dentro para evitar filtraciones y sellado por fuera para un mayor tiempo de vida.",
       id: 2,
       title: "Materitas",
-      img: "https://picsum.photos/id/40/600",
+      img: "https://i.postimg.cc/fT0VQwQs/Materitas.jpg",
       background: "#ffdec8"
     },
     {
-      desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii " ,
+      desc: 
+      "No trasplantes luego que llegan a tu casa, ya que necesitan primero acostumbrarse al nuevo sitio, clima y alrededores.",
+      id: 1,
+      title: "Plantas",
+      img: "https://i.ibb.co/tzn0vMg/Burbu-1.png",
+      background: "#ffdec8"
+    },
+    {
+      desc: "Si se quiere una decoración minimalista, las repisas  En los rincones de trabajo quedan ¡Magníficas!  Las repisas son elementos decorativos y funcionales que cuentan con una inmensa cantidad de utilidades.",
       id: 3,
       title: "Estanterias",
-      img: "https://i.postimg.cc/RZNNZYNb/pexels-jessica-cortez-899567.jpg",
+      img: "https://i.postimg.cc/02DfN0dz/Whats-App-Image-2022-03-14-at-19-41-55.jpg",
       background: "#ffdec8"
     }
 ]
@@ -28,21 +29,21 @@ export const Categorias = [
     desc: "jarajsdoeiomnf",
     id: 1,
     title: "Plantitas",
-    img: "https://i.postimg.cc/9FbMCpBY/Plantitas.jpg",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8"
   },
   {
     desc: "ajhuefrjsiofj",
     id: 2,
     title: "Materitos",
-    img: "https://i.postimg.cc/52jx1Myf/Materitos.jpg",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8"
   },
   {
     desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii " ,
     id: 3,
     title: "Repisas",
-    img: "https://i.postimg.cc/MHryLSXv/Repisas.jpg",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8"
   },
 ]

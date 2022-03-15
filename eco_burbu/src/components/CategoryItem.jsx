@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 const Image = styled.img`
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
 `;
 const Title = styled.h1`

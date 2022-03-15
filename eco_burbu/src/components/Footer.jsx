@@ -4,7 +4,7 @@ import {
     Instagram,
     WhatsApp,
     Map,
-    Phone,
+    PhoneAndroidOutlined,
     Email,} from '@mui/icons-material/';
 
 const Container = styled.div`
@@ -44,7 +44,7 @@ const SocialIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 25px;
 `;
 const Logo = styled.div`
 
@@ -56,6 +56,8 @@ const Logo = styled.div`
 
 const Descrip = styled.p`
     margin: 20px 0px;
+    font-family: cursive;
+    font-size: 120%;
 `;
 const Title = styled.h2`
     margin-bottom: 30px;
@@ -73,8 +75,9 @@ const Footer = () => {
         <Left>
             <Title>Burbuletas</Title>
             <Descrip>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut quos incidunt voluptate temporibus.
-                Non excepturi voluptatibus quam earum reiciendis eaque. Laudantium hic itaque quasi maiores molestiae officiis alias soluta.
+                "Cultivo plantas por muchas razones: para complacer mi ojo o mi alma,
+                desafiar los elementos o desafiar mi paciencia, por novedad o por nostalgia,
+                pero principalmente por la alegría de verlas crecer." – David Hobson 
             </Descrip>
         </Left>
         <Center>
@@ -96,10 +99,10 @@ const Footer = () => {
         <Right>
             <Title>Contacto</Title>
             <ContactItem><Map style={{marginRight:"10px"}}/>
-                carrera 203e #45-147 Cali - Colobia
+                Sevilla-Roldanillo - Colombia
             </ContactItem>
-            <ContactItem><Phone style={{marginRight:"10px"}}/>
-                +57 340 4855 214
+            <ContactItem><PhoneAndroidOutlined style={{marginRight:"10px"}}/>
+                +57 317 425 49 20
             </ContactItem>
             <ContactItem><Email style={{marginRight:"10px"}}/>
                 burbuletas@gmail.com
