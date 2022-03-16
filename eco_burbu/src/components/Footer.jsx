@@ -37,7 +37,7 @@ const Imag = styled.img`
     width: 50%;
     height: 50%;
     display: flex;
-    border-radius:5em;
+    border-radius:10em;
     ${mobile({ width: "100%", borderRadius: "50%" })}
 `;
 const SocialContainer = styled.div`
