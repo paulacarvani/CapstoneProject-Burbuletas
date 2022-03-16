@@ -7,7 +7,7 @@ import { mobile } from "../responsive";
 
 
 const Container = styled.div`
-    ${mobile({ height: "50px" })}
+    ${mobile({ height: "50px", width: "350px" })}
 `;
 
 const Wrapper = styled.div`
@@ -39,6 +39,7 @@ const Imag = styled.img`
     flex: 2;
     max-width: 70%;
     image-rendering: pixelated;
+    ${mobile({ maxWidth: "110%" })}
 
 `;
 
@@ -57,6 +58,7 @@ const MenuItem = styled.div`
     margin-left: 25px;
     cursor: pointer;
     justify-content: flex-end;
+    ${mobile({ fontSize: "12px" })}
 `;
 
 const SocialContainer = styled.div`
