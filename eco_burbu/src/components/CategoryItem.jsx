@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     flex: 1;
@@ -45,16 +46,20 @@ const Info = styled.div`
 `;
 
 
-const CategoryItem = ({item}) => {
-  return (
-    <Container>
-        <Image src={item.img} />
-        <Info>
-            <Title>{item.title}</Title>
-            <Button>Comprar ahora</Button>
-        </Info>
-    </Container>
-  )
+const CategoryItem = ({ item }) => {
+    return (
+        <Container>
+            <Link to={`/${item.cat}`} onClick={()=> {
+                window.scrollTo(0, 0)
+            }}>
+                <Image src={item.img} />
+                <Info>
+                    <Title>{item.title}</Title>
+                    <Button>Comprar ahora</Button>
+                </Info>
+            </Link>
+        </Container>
+    )
 }
 
 export default CategoryItem
