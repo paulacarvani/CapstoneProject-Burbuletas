@@ -1,6 +1,4 @@
 import React from "react";
-import { Badge } from '@mui/material';
-import { ShoppingCart  }from '@mui/icons-material/';
 import styled from "styled-components";
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material/';
 import { mobile } from "../responsive";
@@ -94,11 +92,6 @@ const Navbar = () => {
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
-                <ShoppingCart />
-            </Badge>
-          </MenuItem>
         </Right>
       </Wrapper>
     </Container>
