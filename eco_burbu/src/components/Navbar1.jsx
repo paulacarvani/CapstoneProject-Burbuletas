@@ -99,11 +99,18 @@ const Navbar = () => {
                     </Logo>
                 </Center>
                 <Right>
+                    <MenuItem>
+                        <Link to={"/"} onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}>
+                            HOME
+                        </Link>
+                    </MenuItem>
                     <MenuItem>REGISTER</MenuItem>
                     <MenuItem>SIGN IN</MenuItem>
                 </Right>
             </Wrapper>
-        </Container>
+        </Container >
     );
 };
 
