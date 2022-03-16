@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import { 
+import {
     Facebook,
     Instagram,
     WhatsApp,
     Map,
     PhoneAndroidOutlined,
     Email,} from '@mui/icons-material/';
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     display: flex;
     background-color: #e2f0cb;
+    ${mobile({ padding: "0px", flexDirection: "column" })}
 `;
 const Left = styled.div`
     flex: 1;
@@ -21,6 +23,8 @@ const Center = styled.div`
     flex: 1;
     padding: 20px;
     margin-left: 150px;
+    ${mobile({ flexDirection: "column", display: "flex", alignItems: "center",
+    justifyContent: "center", marginLeft: "50px" })}
 `;
 const Right = styled.div`
     flex: 1;
@@ -31,9 +35,11 @@ const Imag = styled.img`
     height: 50%;
     display: flex;
     border-radius:5em;
+    ${mobile({ width: "100%", borderRadius: "50%" })}
 `;
 const SocialContainer = styled.div`
     display: flex;
+    ${mobile({ padding: "0px 120px 0px 0px" })}
 `;
 const SocialIcon = styled.div`
     width: 50px;
@@ -52,6 +58,7 @@ const Logo = styled.div`
     flex-wrap: wrap;
     margin-bottom: 50px;
     image-rendering: pixelated;
+    ${mobile({ padding: "20px 50px 0px 50px", justifyContent: "right" })}
 `;
 
 const Descrip = styled.p`
@@ -66,7 +73,7 @@ const Title = styled.h2`
 const ContactItem = styled.div`
     margin-bottom: 20px;
     display: flex;
-    alingn-items: center;
+    align-items: center;
 `;
 
 const Footer = () => {
