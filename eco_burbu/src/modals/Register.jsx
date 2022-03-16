@@ -75,9 +75,7 @@ const Button = styled.button`
       box-shadow: 0px 0px 0px 1px #95c9a8;
     }
 `; 
-/* const onClickButton = () => {
 
-} */
 const ButtonClose = styled.button`
     border: none;
     cursor: pointer;
