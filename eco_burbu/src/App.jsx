@@ -1,4 +1,4 @@
-import Products from "./components/Products";
+import Product from "./pages/Product";
 import Home from "./pages/Home";
 import Materitas from "./pages/Materitas";
 import Plantas from "./pages/Plantas";
@@ -18,8 +18,8 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/Products">
-          <Products />
+        <Route path="/Product">
+          <Product />
         </Route>
         <Route path="/Materitas">
           <Materitas />

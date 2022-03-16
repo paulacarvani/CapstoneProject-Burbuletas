@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Search, FavoriteBorder } from '@mui/icons-material/';
+import { Link } from "react-router-dom";
+
 
 const Info = styled.div`
   width: 100%;
@@ -63,14 +65,18 @@ const Icon = styled.div`
 `;
 
 
-const Product = ({item}) => {
+const Product = ({ item }) => {
   return (
     <Container>
       <Circle />
-      <Image src={item.img}/>
+      <Image src={item.img} />
       <Info>
         <Icon>
-          <Search />
+          <Link to={`/Product/${item.id}`} onClick={() => {
+            window.scrollTo(0, 0)
+          }}>
+            <Search />
+          </Link>
         </Icon>
         <Icon>
           <FavoriteBorder />
