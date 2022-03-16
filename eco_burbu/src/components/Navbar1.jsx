@@ -3,9 +3,11 @@ import { Badge } from '@mui/material';
 import { ShoppingCart  }from '@mui/icons-material/';
 import styled from "styled-components";
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material/';
+import { mobile } from "../responsive";
 
 
 const Container = styled.div`
+    ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
@@ -14,12 +16,14 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     flex: 1;
+    ${mobile({ padding: "10px 0px" })}
 `;
 
 const Left = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    ${mobile({ display: "none" })}
 `;
 
 const Center = styled.div`
@@ -42,6 +46,7 @@ const Right = styled.div`
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    ${mobile({ width: "20%" })}
 `;
 
 const MenuItem = styled.div`
@@ -51,7 +56,7 @@ const MenuItem = styled.div`
     font-size: 14px;
     margin-left: 25px;
     cursor: pointer;
-    justify-content: flex-end
+    justify-content: flex-end;
 `;
 
 const SocialContainer = styled.div`
