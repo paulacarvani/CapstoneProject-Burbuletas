@@ -51,30 +51,70 @@ export const Categorias = [
 export const popularProducts = [
   {
     id:1,
-    img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    img:"https://i.ibb.co/tzn0vMg/Burbu-1.png",
   },
-  // {
-  //   id:2,
-  //   img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
-  // },
+  {
+     id:2,
+     img:"https://i.postimg.cc/zvTwfKwh/Whats-App-Image-2022-03-15-at-18-31-26.jpg",
+  },
   {
     id:3,
-    img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+    img:"https://i.postimg.cc/4Nbbkvxk/Whats-App-Image-2022-03-15-at-18-31-32.jpg",
   },
   {
     id:4,
-    img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+    img:"https://i.postimg.cc/ZKhFMsZx/Whats-App-Image-2022-03-15-at-18-31-43.jpg",
   },
   {
     id:5,
-    img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    img:"https://i.postimg.cc/nVmGTf8L/Whats-App-Image-2022-03-15-at-18-32-17.jpg",
   },
   {
     id:6,
-    img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    img:"https://i.postimg.cc/QCZ4SX0p/Whats-App-Image-2022-03-15-at-18-46-11.jpg",
   },
   {
     id:8,
-    img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    img:"https://i.postimg.cc/Y0NXsJsT/Whats-App-Image-2022-03-15-at-18-46-02.jpg",
+  },
+  {
+    id:9,
+    img:"https://i.postimg.cc/vHM2VZ1y/Whats-App-Image-2022-03-15-at-18-46-27.jpg",
   },
 ]
+
+export const Materas = [
+  {
+    id:1,
+    img:"https://i.ibb.co/tzn0vMg/Burbu-1.png",
+  },
+  {
+     id:2,
+     img:"https://i.ibb.co/tzn0vMg/Burbu-1.png",
+  },
+  {
+    id:3,
+    img:"https://i.ibb.co/tzn0vMg/Burbu-1.png",
+  },
+  {
+    id:4,
+    img:"https://i.postimg.cc/ZKhFMsZx/Whats-App-Image-2022-03-15-at-18-31-43.jpg",
+  },
+  {
+    id:5,
+    img:"https://i.postimg.cc/nVmGTf8L/Whats-App-Image-2022-03-15-at-18-32-17.jpg",
+  },
+  {
+    id:6,
+    img:"https://i.postimg.cc/QCZ4SX0p/Whats-App-Image-2022-03-15-at-18-46-11.jpg",
+  },
+  {
+    id:8,
+    img:"https://i.postimg.cc/Y0NXsJsT/Whats-App-Image-2022-03-15-at-18-46-02.jpg",
+  },
+  {
+    id:9,
+    img:"https://i.postimg.cc/vHM2VZ1y/Whats-App-Image-2022-03-15-at-18-46-27.jpg",
+  },
+]
+
