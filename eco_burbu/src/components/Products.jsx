@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {popularProducts} from "../data"
 import Product from "./Product"
 
 const Container = styled.div`
@@ -15,11 +14,11 @@ const Title = styled.h1`
   margin-block-end: 1em;
 `;
 
-const Products = () => {
+const Products = ({title,products}) => {
   return (
     <Container>
-      <Title>Más vendidos</Title>
-        {popularProducts.map(item=>(
+      <Title>{title}</Title>
+        {products.map(item=>(
             <Product key={item.id} item={item} />
         ))}
     </Container>
