@@ -1,52 +1,122 @@
-import '../Slider.css';
-import React, { useState } from 'react';
-import { KeyboardArrowRight, KeyboardArrowLeft } from '@mui/icons-material/';
-import {sliderItems} from "../data"
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material"
+import { useState } from "react";
+import styled from "styled-components"
+import { sliderItems } from "../data"
+import { mobile } from "../responsive";
 
-let transX = 0;
-let slideIndex = 0;
+const Container = styled.div `
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    ${mobile({ display: "none" })}
+`;
+
+const Arrow = styled.div`
+    width: 50px;
+    height: 50px;
+    background-color: #fff7f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: ${props=> props.direction === "left" && "10px"};
+    right: ${props=> props.direction === "right" && "10px"};
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
+`;
+
+const Wrapper = styled.div `
+    height: 50%;
+    display: flex;
+    transform: translateX(${props=>props.slideIndex * -100}vw);
+    transition: all 1.5s ease;
+`;
+
+const Slide = styled.div`
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8d7bb;
+    `;
+
+const ImgContainer = styled.div`
+    height: 100%;
+    flex: 1;
+    max-width: 70vmin;
+`;
+
+const Image = styled.img`
+    image-rendering: pixelated;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+`;
+
+const InfoContainer =styled.div`
+    flex: 1;
+    padding: 50px;
+`;
+
+const Title = styled.h1`
+    font-size: 60px;
+`;
+
+const Desc = styled.p`
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+`;
+
+const Button = styled.button`
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+`;
 
 const Slider = () => {
-  const [customStyle, setCustomStyle] = useState({});
-
-  const handleClick = (direction) => {
-      if (direction === "left") {
-          slideIndex = slideIndex > 0 ? slideIndex-1 : (sliderItems.length -1);
+    const [slideIndex, setSlideIndex] = useState(0);
+    const handleClick = (direction) => {
+        if(direction==="left"){
+            setSlideIndex(slideIndex > 0 ? slideIndex -1 : 2);
         } else {
-            slideIndex = slideIndex < (sliderItems.length - 1) ? slideIndex+1 : 0;
+            setSlideIndex(slideIndex < 2 ? slideIndex +1 : 0);
         }
-        transX = slideIndex * -100
-        setCustomStyle({ transform: 'translateX(' + transX + "vw)"});
-  }
-    
-  return (
-    <div className="Container_Slider" >
-        <div className="Arrow Arrow_left" onClick={() => handleClick('left')}>
-            <KeyboardArrowLeft />
-        </div>
-        <div className="Wrapper_Slider" style={customStyle}>
-            {sliderItems.map(item => (
-            <div key={item.id} className= { "Slide " + item.background}>
-                <div className="ImgContainer" >
-                    <div className="Image" >
-                        <img src={item.img} alt="slider"/>   
-                    </div>
-                </div>
-                <div className="InfoContainer">
-                    <h1 className="Title" >{item.title}</h1>
-                    <p className="Description">{item.desc}</p>
-                    {/* <button className="Button">Ver más</button> */}
-                </div>
-            </div>
-            ))};
-            </div>
-        
-        <div className="Arrow Arrow_right" onClick={() => handleClick('right')}>
-            <KeyboardArrowRight />
-        </div>
-    </div>
+    };
 
-  )
+    return (
+        <Container>
+            <Arrow direction="left" onClick={()=>handleClick("left")}>
+                <ArrowLeftOutlined/>
+            </Arrow>
+            <Wrapper slideIndex={slideIndex}>
+                {sliderItems.map((item) => (
+                    <Slide bg={item.bg} key={item.id}>
+                        <ImgContainer>
+                            <Image src={item.img} />
+                        </ImgContainer>
+                        <InfoContainer>
+                            <Title>{item.title}</Title>
+                            <Desc>{item.desc}</Desc>
+                            <Button>Show Details</Button>
+                        </InfoContainer>
+                    </Slide>
+                ))}
+            </Wrapper>
+            <Arrow direction="right" onClick={()=>handleClick("right")}>
+                <ArrowRightOutlined/>
+            </Arrow>
+        </Container>
+    )
 }
 
 export default Slider
