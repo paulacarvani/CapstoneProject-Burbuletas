@@ -10,13 +10,13 @@ const Container = styled.div`
   justify-content: center;
   font-size: 16px;
   font-weight: 500;
-  ${mobile({ height: "50px" })}
+  ${mobile({ fontSize: "12px", padding: "0px 15px" })}
 `
 
 const Announcement = () => {
   return (
     <Container>
-        Envios gratis a nivel *regional por compras mayores a $20.000.*(Sevilla y Roldanillo)
+        Envios gratis a nivel *regional por compras mayores a $20.000.     *(Sevilla y Roldanillo)
     </Container>
   )
 }
