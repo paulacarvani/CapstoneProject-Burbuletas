@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material/';
 import { mobile } from "../responsive";
-
+import { show } from "../store/modalSlide"
+import { useDispatch } from "react-redux";
 
 const Container = styled.div`
     ${mobile({ height: "50px", width: "350px" })}
@@ -48,7 +49,10 @@ const Right = styled.div`
     ${mobile({ width: "20%" })}
 `;
 
-const MenuItem = styled.div`
+const MenuItem = styled.button`
+    background-color: transparent;
+    outline: none;
+    border: none;
     flex: 1;
     display: flex;
     align-items: center;
@@ -68,6 +72,8 @@ const SocialIcon = styled.div`
 `;
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Wrapper>
@@ -90,7 +96,7 @@ const Navbar = () => {
           </Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
+          <MenuItem onClick={() => dispatch(show())}>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
         </Right>
       </Wrapper>
