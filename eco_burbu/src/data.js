@@ -30,21 +30,24 @@ export const Categorias = [
     id: 1,
     title: "Plantitas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
-    background: "#ffdec8"
+    background: "#ffdec8",
+    cat: "Plantas"
   },
   {
     desc: "ajhuefrjsiofj",
     id: 2,
     title: "Materitos",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
-    background: "#ffdec8"
+    background: "#ffdec8",
+    cat: "Materitas"
   },
   {
     desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii " ,
     id: 3,
     title: "Repisas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
-    background: "#ffdec8"
+    background: "#ffdec8",
+    cat: "Repisas"
   },
 ]
 
