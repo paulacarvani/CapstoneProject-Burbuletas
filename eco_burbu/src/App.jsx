@@ -10,6 +10,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ProductList from "./pages/ProductList";
 
 
 const App = () => {
@@ -25,13 +26,13 @@ const App = () => {
           <Product />
         </Route>
         <Route path="/Materitas">
-          <Materitas />
+          <ProductList />
         </Route>
         <Route path="/Plantas">
-          <Plantas />
+          <ProductList />
         </Route>
         <Route path="/Repisas">
-          <Repisas />
+          <ProductList />
         </Route>
       </Switch>
       {render && <ModalRegister />}

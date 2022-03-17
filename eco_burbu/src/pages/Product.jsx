@@ -35,7 +35,7 @@ const Desc =styled.p`
   font-size: 30px;
 `;
 
-const Note =styled.p`
+const Price =styled.span`
   font-weight: 100;
   font-size: 20px;
   font-style: italic;
@@ -60,9 +60,9 @@ const Product = () => {
           <Desc>
           Nuestras materas dan un toque especial, promete traernos la magia en una pieza única capaz de trasmitirnos calidez, dónde cada detalle es pintado a mano, esmaltado por dentro para evitar filtraciones y sellado por fuera para un mayor tiempo de vida.
           </Desc>
-          <Note>
+          <Price>
             "$25.000"
-          </Note>
+          </Price>
         </InfoContainer>
       </Wrapper>
       <Footer/>
