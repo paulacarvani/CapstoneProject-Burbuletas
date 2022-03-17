@@ -97,7 +97,7 @@ const Footer = () => {
                 <SocialContainer>
                     <SocialIcon color="3B5999">
                         <a href="https://web.facebook.com/11Burbuletas" target="_blank">
-                            <Facebook fontSize="large" />
+                            <Facebook href="https://web.facebook.com/11Burbuletas" fontSize="large" />
                         </a>
                     </SocialIcon >
                     <SocialIcon color="E4405F">
