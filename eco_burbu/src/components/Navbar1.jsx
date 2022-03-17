@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Facebook, Instagram, WhatsApp } from '@mui/icons-material/';
 import { mobile } from "../responsive";
-import { show } from "../store/modalSlide"
+import { set } from "../store/modalSlide"
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -71,10 +71,20 @@ const SocialContainer = styled.div`
 const SocialIcon = styled.div`
     margin-right: 25px;
 `;
+const ButtonInicio = styled.div`
+
+`;
+const LinkInicio = styled.button`
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+`;
 
 const Navbar = () => {
   const dispatch = useDispatch();
-
     return (
         <Container>
             <Wrapper>
@@ -105,15 +115,15 @@ const Navbar = () => {
                     </Logo>
                 </Center>
                 <Right>
-                    <MenuItem>
-                        <Link to={"/"} onClick={() => {
+                    <ButtonInicio>
+                        <LinkInicio to={"/"} onClick={() => {
                             window.scrollTo(0, 0)
                         }}>
-                            HOME
-                        </Link>
-                    </MenuItem>
-                    <MenuItem onClick={() => dispatch(show())}>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
+                            INICIO
+                        </LinkInicio>
+                    </ButtonInicio>
+                    <MenuItem onClick={() => dispatch(set({key: 'register', value: true}))}>REGISTRO</MenuItem>
+                    <MenuItem onClick={() => dispatch(set({key: 'signIn', value: true}))}>INGRESAR</MenuItem>
                 </Right>
             </Wrapper>
         </Container >

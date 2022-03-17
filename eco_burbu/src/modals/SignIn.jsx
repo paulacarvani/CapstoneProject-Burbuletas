@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-import plants from "../images/g10.png";
+import plants from "../images/g10.png"
 import { set } from "../store/modalSlide";
 import { useDispatch } from "react-redux";
 
-
-const WrapperModal=styled.section`
+const WrapperModal2=styled.section` 
     position: fixed;
     top: 0px;
     height: 100vh;
@@ -20,7 +19,7 @@ const WrapperModal=styled.section`
     backdrop-filter: blur(10px);
 `;
 
-const Modal=styled.article`
+const Modal2=styled.article`
     position: relative;
     width: 60vmin;
     min-height: 30vmin;
@@ -86,28 +85,26 @@ const ButtonClose = styled.button`
     opacity: 0.4;
 `;
 
-export const ModalRegister=() => {
+export const ModalSignIn=() => {
   const dispatch = useDispatch();
 
   return(
     ReactDOM.createPortal(
-      <WrapperModal>
-        <Modal>
-          <ButtonClose onClick={() => dispatch(set({key: 'register', value: false}))}>
+      <WrapperModal2>
+        <Modal2>
+          <ButtonClose onClick={() => dispatch(set({key: 'signIn', value: false}))}>
             X
           </ButtonClose>
-          <Title>Registro</Title>
+          <Title>Ingresar</Title>
           <Form>
-            <Input type="text" placeholder="Usuario"/>
-            <Input type="email" placeholder="Email"/>
+            <Input type="text" placeholder="Usuario o Email"/>
             <Input type="password" placeholder="Contraseña"/>
-            <Input type="password" placeholder="Validar Contraseña"/>
             <Button type="submit">
-              Registrarse
+             Ingresar 
             </Button>
           </Form>
-        </Modal>
-      </WrapperModal>,
+        </Modal2>
+      </WrapperModal2>,
       document.getElementById("modal")
     )
   );

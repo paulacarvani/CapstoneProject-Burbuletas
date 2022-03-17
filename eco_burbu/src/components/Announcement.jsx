@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   ${mobile({ fontSize: "12px", padding: "0px 15px" })}
 `
 

@@ -1,21 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  render: false,
+  register: false,
+  signIn: false
 }
 
 export const modalSlide = createSlice({
   name: 'modal',
   initialState,
   reducers: {
-    show: (state) => {
-      return {...state, render: true}
-      },
-    close: (state) => {
-      return {...state, render: false}
+    set: (state, { payload: {key, value} }) => {
+      return {...state, [key]: value}
     },
   }
 })
-
-export const { show, close } = modalSlide.actions;
+export const { set } = modalSlide.actions;
 export const { reducer: reducerModal } = modalSlide;
