@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ModalRegister } from './modals/Register'
+import { ModalSignIn } from './modals/SignIn'; //new
 import { store } from "./store";
 import { Provider } from "react-redux";
 

@@ -3,7 +3,8 @@ import Home from "./pages/Home";
 import Materitas from "./pages/Materitas";
 import Plantas from "./pages/Plantas";
 import Repisas from "./pages/Repisas";
-import { ModalRegister } from './modals/Register'
+import { ModalRegister } from './modals/Register';
+import { ModalSignIn } from './modals/SignIn';
 import { useSelector } from "react-redux";
 import {
   BrowserRouter as Router,
@@ -14,8 +15,8 @@ import ProductList from "./pages/ProductList";
 
 
 const App = () => {
-  const render = useSelector(store => store.modal.render);
-
+  const register = useSelector(store => store.modal.register);
+  const signIn = useSelector(store => store.modal.signIn);
   return (
     <Router>
       <Switch>
@@ -35,7 +36,8 @@ const App = () => {
           <ProductList />
         </Route>
       </Switch>
-      {render && <ModalRegister />}
+      {register && <ModalRegister />}
+     {signIn && <ModalSignIn />}
     </Router>
   );
 };
