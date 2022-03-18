@@ -29,10 +29,12 @@ const Left = styled.div`
 const Center = styled.div`
     flex: 1;
     text-align: center;
+    ${mobile({ width: "20%" })}
 `;
 
 const Logo = styled.div`
     flex: 1;
+    ${mobile({ width: "50%" })}
 `;
 
 const Imag = styled.img`
@@ -72,20 +74,10 @@ const SocialIcon = styled.div`
     margin-right: 25px;
     color: #59351F;
 `;
-const ButtonInicio = styled.div`
 
-`;
-const LinkInicio = styled.button`
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-`;
 
 const Navbar = () => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
     return (
         <Container>
             <Wrapper>
@@ -116,15 +108,22 @@ const Navbar = () => {
                     </Logo>
                 </Center>
                 <Right>
-                    <ButtonInicio>
-                        <LinkInicio to={"/"} onClick={() => {
+                    <MenuItem>
+                        <Link to={"/"} onClick={() => {
                             window.scrollTo(0, 0)
                         }}>
                             INICIO
-                        </LinkInicio>
-                    </ButtonInicio>
-                    <MenuItem onClick={() => dispatch(set({key: 'register', value: true}))}>REGISTRO</MenuItem>
-                    <MenuItem onClick={() => dispatch(set({key: 'signIn', value: true}))}>INGRESAR</MenuItem>
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to={"/Favorites"} onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}>
+                            FAVORITOS
+                        </Link>
+                    </MenuItem>
+                    <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
+                    <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem>
                 </Right>
             </Wrapper>
         </Container >

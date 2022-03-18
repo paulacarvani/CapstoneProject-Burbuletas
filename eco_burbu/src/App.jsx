@@ -11,6 +11,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ProductList from "./pages/ProductList";
+import Favorites from "./pages/Favorites";
+
 
 
 const App = () => {
@@ -22,21 +25,18 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/Product">
+        <Route path="/product/:id">
           <Product />
         </Route>
-        <Route path="/Materitas">
-          <Materitas />
+        <Route path="/products/:category">
+          <ProductList />
         </Route>
-        <Route path="/Plantas">
-          <Plantas />
-        </Route>
-        <Route path="/Repisas">
-          <Repisas />
+        <Route path="/Favorites">
+          <Favorites />
         </Route>
       </Switch>
       {register && <ModalRegister />}
-     {signIn && <ModalSignIn />}
+      {signIn && <ModalSignIn />}
     </Router>
   );
 };
