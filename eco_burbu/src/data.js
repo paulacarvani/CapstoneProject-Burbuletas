@@ -54,35 +54,35 @@ export const Categorias = [
 export const popularProducts = [
   {
     id:1,
-    img:"https://i.ibb.co/yRs7wX9/Untitled-design-12.png",
+    img:"https://i.ibb.co/km1pX9x/22.png",
   },
   {
      id:2,
-     img:"https://i.postimg.cc/zvTwfKwh/Whats-App-Image-2022-03-15-at-18-31-26.jpg",
+     img:"https://i.ibb.co/sRnNht2/25.png",
   },
   {
     id:3,
-    img:"https://i.postimg.cc/4Nbbkvxk/Whats-App-Image-2022-03-15-at-18-31-32.jpg",
+    img:"https://i.ibb.co/MNZQPKn/26.png",
   },
   {
     id:4,
-    img:"https://i.postimg.cc/ZKhFMsZx/Whats-App-Image-2022-03-15-at-18-31-43.jpg",
+    img:"https://i.ibb.co/8nCCd2J/24.png",
   },
   {
     id:5,
-    img:"https://i.postimg.cc/nVmGTf8L/Whats-App-Image-2022-03-15-at-18-32-17.jpg",
+    img:"https://i.ibb.co/JFtrP0C/23.png",
   },
   {
     id:6,
-    img:"https://i.postimg.cc/QCZ4SX0p/Whats-App-Image-2022-03-15-at-18-46-11.jpg",
+    img:"https://i.ibb.co/9pmzsp8/14.png",
   },
   {
     id:8,
-    img:"https://i.postimg.cc/Y0NXsJsT/Whats-App-Image-2022-03-15-at-18-46-02.jpg",
+    img:"https://i.ibb.co/1rMPwHD/13.png",
   },
   {
     id:9,
-    img:"https://i.postimg.cc/vHM2VZ1y/Whats-App-Image-2022-03-15-at-18-46-27.jpg",
+    img:"https://i.ibb.co/DgrDdnT/15.png",
   },
 ]
 

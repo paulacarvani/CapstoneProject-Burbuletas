@@ -3,7 +3,6 @@ import Footer from "../components/Footer"
 import Navbar1 from "../components/Navbar1"
 import Announcement from "../components/Announcement"
 import { mobile } from "../responsive"
-import { Add, Remove } from '@mui/icons-material/'
 
 const Container = styled.div`
 
@@ -102,12 +101,7 @@ const Product = () => {
             $25.000
           </Price>
           <AddContainer>
-            <AmountContainer>
-              <Remove />
-              <Amount>1</Amount>
-              <Add />
-            </AmountContainer>
-            <Button>ADD TO CART</Button>
+            <Button>Añadir a Favoritos</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
