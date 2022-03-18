@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const Customers = require("../models/Customers");
 const router = require("express").Router();
 const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 //REGISTER
 router.post("/register", async (req, resp) => {
-    const newUser = new User({
+    const newUser = new Customers({
         username: req.body.username,
         email: req.body.email,
         //encriptar el password
