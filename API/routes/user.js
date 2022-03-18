@@ -1,4 +1,4 @@
-const Customers = require("../models/Customers");
+const User = require("../models/User");
 const {
     verifyToken,
     verifyTokenAndAuthorization,

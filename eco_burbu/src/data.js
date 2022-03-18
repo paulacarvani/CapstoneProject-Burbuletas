@@ -26,7 +26,7 @@ export const sliderItems = [
 
 export const Categorias = [
   {
-    desc: "jarajsdoeiomnf",
+    desc: "Plantitas",
     id: 1,
     title: "Plantitas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
@@ -34,7 +34,7 @@ export const Categorias = [
     cat: "Plantas"
   },
   {
-    desc: "ajhuefrjsiofj",
+    desc: "Materitas",
     id: 2,
     title: "Materitas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
@@ -42,13 +42,38 @@ export const Categorias = [
     cat: "Materitas"
   },
   {
-    desc: "nshrfei oeefrojsfñm  jauehrfmksp sojrjiksndsii ",
+    desc: "Suculentas",
     id: 3,
+    title: "Suculentas",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    background: "#ffdec8",
+    cat: "Suculentas"
+  },
+  {
+    desc: "Animalitos",
+    id: 4,
+    title: "Animalitos",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    background: "#ffdec8",
+    cat: "Animalitos"
+  },
+  /*{
+    desc: "Cactus",
+    id: 5,
+    title: "Cactus",
+    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    background: "#ffdec8",
+    cat: "Cactus"
+  },
+  {
+    desc: "Repisas",
+    id: 6,
     title: "Repisas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8",
     cat: "Repisas"
   },
+*/
 ]
 
 export const popularProducts = [

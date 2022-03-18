@@ -34,10 +34,13 @@ const App = () => {
         <Route path="/Materitas">
           <ProductList />
         </Route>
-        <Route path="/Plantas">
+        <Route path="/Plantitas">
           <ProductList />
         </Route>
-        <Route path="/Repisas">
+        <Route path="/Suculentas">
+          <Favorites />
+        </Route>
+        <Route path="/Animalitos">
           <ProductList />
         </Route>
       </Switch>
