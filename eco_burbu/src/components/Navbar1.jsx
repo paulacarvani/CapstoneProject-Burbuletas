@@ -76,58 +76,51 @@ const SocialIcon = styled.div`
 `;
 
 
+
 const Navbar = () => {
-    const dispatch = useDispatch();
-    return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    <SocialContainer>
-                        <SocialIcon>
-                            <a href="https://web.facebook.com/11Burbuletas" target="_blank">
-                                <Facebook fontSize="large" />
-                            </a>
-                        </SocialIcon>
-                        <SocialIcon>
-                            <a href="https://www.instagram.com/burbuletas1/" target="_blank">
-                                <Instagram fontSize="large" />
-                            </a>
-                        </SocialIcon>
-                        <SocialIcon>
-                            <WhatsApp fontSize="large" />
-                        </SocialIcon>
-                    </SocialContainer>
-                </Left>
-                <Center>
-                    <Logo>
-                        <Link to={"/"} onClick={() => {
-                            window.scrollTo(0, 0)
-                        }}>
-                            <Imag src="https://i.ibb.co/zmSngjH/Untitled-design-11.png" alt="Logo burbuletas" />
-                        </Link>
-                    </Logo>
-                </Center>
-                <Right>
-                    <MenuItem>
-                        <Link to={"/"} onClick={() => {
-                            window.scrollTo(0, 0)
-                        }}>
-                            INICIO
-                        </Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link to={"/Favorites"} onClick={() => {
-                            window.scrollTo(0, 0)
-                        }}>
-                            FAVORITOS
-                        </Link>
-                    </MenuItem>
-                    <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
-                    <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem>
-                </Right>
-            </Wrapper>
-        </Container >
-    );
+  const dispatch = useDispatch();
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          <SocialContainer>
+            <SocialIcon>
+              <a href="https://web.facebook.com/11Burbuletas" target="_blank">
+                <Facebook fontSize="large" />
+              </a>
+            </SocialIcon>
+            <SocialIcon>
+              <a href="https://www.instagram.com/burbuletas1/" target="_blank">
+                <Instagram fontSize="large" />
+              </a>
+            </SocialIcon>
+            <SocialIcon>
+              <WhatsApp fontSize="large" />
+            </SocialIcon>
+          </SocialContainer>
+        </Left>
+        <Center>
+          <Logo>
+            <Link to={"/"} onClick={() => {
+              window.scrollTo(0, 0)
+            }}>
+              <Imag src="https://i.ibb.co/zmSngjH/Untitled-design-11.png" alt="Logo burbuletas" />
+            </Link>
+          </Logo>
+        </Center>
+        <Right>
+          <MenuItem>
+            <Link to={"/"} onClick={() => { window.scrollTo(0, 0) }}>INICIO</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to={"/Favorites"} onClick={() => { window.scrollTo(0, 0) }}>FAVORITOS</Link>
+          </MenuItem>
+          <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
+          <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem>
+        </Right>
+      </Wrapper>
+    </Container >
+  );
 };
 
 export default Navbar;
