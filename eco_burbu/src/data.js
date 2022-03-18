@@ -54,7 +54,7 @@ export const Categorias = [
 export const popularProducts = [
   {
     id:1,
-    img:"https://i.ibb.co/tzn0vMg/Burbu-1.png",
+    img:"https://i.ibb.co/yRs7wX9/Untitled-design-12.png",
   },
   {
      id:2,
