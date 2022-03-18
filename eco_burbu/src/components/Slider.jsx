@@ -69,8 +69,11 @@ const InfoContainer =styled.div`
 
 const Title = styled.h1`
     font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
+   /*  font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    color: #59351F;
+    margin-bottom: 20px;
 `;
 
 const Desc = styled.p`
@@ -78,6 +81,10 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+    color: #59351F;
+    margin-top: 20px;
+
 `;
 
 

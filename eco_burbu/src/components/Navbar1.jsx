@@ -70,6 +70,7 @@ const SocialContainer = styled.div`
 
 const SocialIcon = styled.div`
     margin-right: 25px;
+    color: #59351F;
 `;
 const ButtonInicio = styled.div`
 
