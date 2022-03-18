@@ -6,15 +6,14 @@ import axios from "axios";
 
 
 const Container = styled.div`
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+padding: 0px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 `;
 
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -25,15 +24,16 @@ const Products = ({ cat, filters, sort }) => {
             : "http://localhost:5000/api/products"
         );
         setProducts(res.data);
-        console.log(res)
-      } catch (err) {}
+        console.log(res);
+      } catch (err) { }
     };
     getProducts();
   }, [cat]);
 
+
   return (
     <Container>
-      {popularProducts.map(item => (
+      {products.map(item => (
         <Product key={item.id} item={item} />
       ))}
     </Container>

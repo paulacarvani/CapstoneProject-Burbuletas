@@ -72,7 +72,7 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Icon>
-          <Link to={`/Product/${item.id}`} onClick={() => {
+          <Link to={`/Product/${item._id}`} onClick={() => {
             window.scrollTo(0, 0)
           }}>
             <Search />

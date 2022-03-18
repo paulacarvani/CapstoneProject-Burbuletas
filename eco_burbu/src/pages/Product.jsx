@@ -3,7 +3,9 @@ import Footer from "../components/Footer"
 import Navbar1 from "../components/Navbar1"
 import Announcement from "../components/Announcement"
 import { mobile } from "../responsive"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { publicRequest } from "../requestMethods"
 
 const Container = styled.div`
 
@@ -66,6 +68,20 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const res = await publicRequest.get("/products/find/" + id);
+        setProduct(res.data);
+      } catch {}
+    };
+    getProduct();
+  }, [id]);
+
   return (
     <Container>
       <Navbar1 />
@@ -76,13 +92,13 @@ const Product = () => {
         </ImgContainer>
         <InfoContainer>
           <Title>
-            Mandalas
+            {product.name}
           </Title>
           <Desc>
-            Nuestras materas dan un toque especial, promete traernos la magia en una pieza única capaz de trasmitirnos calidez, dónde cada detalle es pintado a mano, esmaltado por dentro para evitar filtraciones y sellado por fuera para un mayor tiempo de vida.
+            {product.description}
           </Desc>
           <Price>
-            $25.000
+          {product.price}
           </Price>
           <AddContainer>
             <Button>

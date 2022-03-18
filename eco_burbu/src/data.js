@@ -26,12 +26,12 @@ export const sliderItems = [
 
 export const Categorias = [
   {
-    desc: "Plantitas",
+    desc: "Cactus",
     id: 1,
-    title: "Plantitas",
+    title: "Cactus",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8",
-    cat: "Plantitas"
+    cat: "Cactus"
   },
   {
     desc: "Materitas",
