@@ -73,17 +73,7 @@ const SocialContainer = styled.div`
 const SocialIcon = styled.div`
     margin-right: 25px;
 `;
-const ButtonInicio = styled.div`
 
-`;
-const LinkInicio = styled.button`
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-`;
 
 const Navbar = () => {
     const dispatch = useDispatch();
@@ -118,13 +108,18 @@ const Navbar = () => {
                 </Center>
                 <Right>
                     <MenuItem>
-                        <ButtonInicio>
-                            <Link to={"/"} onClick={() => {
-                                window.scrollTo(0, 0)
-                            }}>
-                                INICIO
-                            </Link>
-                        </ButtonInicio>
+                        <Link to={"/"} onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}>
+                            INICIO
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to={"/Favorites"} onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}>
+                            FAVORITOS
+                        </Link>
                     </MenuItem>
                     <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
                     <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem>

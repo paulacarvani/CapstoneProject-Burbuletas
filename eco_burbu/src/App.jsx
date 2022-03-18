@@ -12,6 +12,8 @@ import {
   Route,
 } from "react-router-dom";
 import ProductList from "./pages/ProductList";
+import Favorites from "./pages/Favorites";
+
 
 
 const App = () => {
@@ -22,6 +24,9 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/Favorites">
+          <Favorites />
         </Route>
         <Route path="/Product">
           <Product />
@@ -37,7 +42,7 @@ const App = () => {
         </Route>
       </Switch>
       {register && <ModalRegister />}
-     {signIn && <ModalSignIn />}
+      {signIn && <ModalSignIn />}
     </Router>
   );
 };

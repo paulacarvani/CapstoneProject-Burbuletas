@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Navbar1 from "../components/Navbar1"
 import Announcement from "../components/Announcement"
 import { mobile } from "../responsive"
+import { Link } from "react-router-dom"
 
 const Container = styled.div`
 
@@ -53,23 +54,6 @@ const AddContainer = styled.div`
   ${mobile({ width: "100%" })}
 `;
 
-const AmountContainer = styled.div`
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-`;
-
-const Amount = styled.span`
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid #aed79c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 5px;
-`;
-
 const Button = styled.button`
   padding: 15px;
   border: 2px solid #aed79c;
@@ -101,7 +85,13 @@ const Product = () => {
             $25.000
           </Price>
           <AddContainer>
-            <Button>Añadir a Favoritos</Button>
+            <Button>
+              <Link to={`/Favorites`} onClick={() => {
+                window.scrollTo(0, 0)
+              }}>
+                Añadir a Favoritos
+              </Link>
+            </Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

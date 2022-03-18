@@ -79,7 +79,11 @@ const Product = ({ item }) => {
           </Link>
         </Icon>
         <Icon>
-          <FavoriteBorder />
+          <Link to={`/Favorites`} onClick={() => {
+            window.scrollTo(0, 0)
+          }}>
+            <FavoriteBorder />
+          </Link>
         </Icon>
       </Info>
     </Container>

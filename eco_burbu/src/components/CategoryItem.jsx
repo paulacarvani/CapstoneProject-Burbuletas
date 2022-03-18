@@ -49,15 +49,19 @@ const Info = styled.div`
 const CategoryItem = ({ item }) => {
     return (
         <Container>
-            <Link to={`/${item.cat}`} onClick={()=> {
-                window.scrollTo(0, 0)
-            }}>
-                <Image src={item.img} />
-                <Info>
-                    <Title>{item.title}</Title>
-                    <Button>Comprar ahora</Button>
-                </Info>
-            </Link>
+
+            <Image src={item.img} />
+            <Info>
+                <Title>{item.title}</Title>
+                <Button>
+                    <Link to={`/${item.cat}`} onClick={() => {
+                        window.scrollTo(0, 0)
+                    }}>
+                        Comprar ahora
+                    </Link>
+                </Button>
+            </Info>
+
         </Container>
     )
 }
