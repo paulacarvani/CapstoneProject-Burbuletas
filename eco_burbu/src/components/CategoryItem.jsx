@@ -53,7 +53,7 @@ const CategoryItem = ({ item }) => {
             <Info>
                 <Title>{item.title}</Title>
                 <Button>
-                    <Link to={`/${item.cat}`} onClick={() => {
+                    <Link to={`/products/${item.cat}`} onClick={() => {
                         window.scrollTo(0, 0)
                     }}>
                         Comprar ahora

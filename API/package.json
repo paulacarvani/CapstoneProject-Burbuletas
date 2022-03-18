@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/paulacarvani/CapstoneProject-Burbuletas#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "cryptojs": "^2.5.3",
     "dotenv": "^16.0.0",

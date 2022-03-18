@@ -25,23 +25,14 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/Favorites">
-          <Favorites />
-        </Route>
-        <Route path="/Product">
+        <Route path="/product/:id">
           <Product />
         </Route>
-        <Route path="/Materitas">
+        <Route path="/products/:category">
           <ProductList />
         </Route>
-        <Route path="/Plantitas">
-          <ProductList />
-        </Route>
-        <Route path="/Suculentas">
+        <Route path="/Favorites">
           <Favorites />
-        </Route>
-        <Route path="/Animalitos">
-          <ProductList />
         </Route>
       </Switch>
       {register && <ModalRegister />}

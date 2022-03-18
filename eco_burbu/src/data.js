@@ -31,7 +31,7 @@ export const Categorias = [
     title: "Plantitas",
     img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
     background: "#ffdec8",
-    cat: "Plantas"
+    cat: "Plantitas"
   },
   {
     desc: "Materitas",
