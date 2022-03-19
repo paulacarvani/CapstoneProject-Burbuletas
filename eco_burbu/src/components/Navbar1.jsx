@@ -6,6 +6,7 @@ import { set } from "../store/modalSlide"
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+
 const Container = styled.div`
     ${mobile({ height: "50px", width: "350px" })}
 `;

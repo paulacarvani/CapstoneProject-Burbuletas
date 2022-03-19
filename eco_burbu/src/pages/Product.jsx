@@ -77,10 +77,15 @@ const Product = () => {
       try {
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
-      } catch {}
+      } catch { }
     };
     getProduct();
   }, [id]);
+
+  const HandleClick =()=>{
+    //Update favorites
+  }
+
 
   return (
     <Container>
@@ -88,7 +93,7 @@ const Product = () => {
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src="https://i.postimg.cc/fT0VQwQs/Materitas.jpg" />
+          <Image src={product.image}/>
         </ImgContainer>
         <InfoContainer>
           <Title>
@@ -98,15 +103,11 @@ const Product = () => {
             {product.description}
           </Desc>
           <Price>
-          {product.price}
+            {product.price}
           </Price>
           <AddContainer>
-            <Button>
-              <Link to={`/Favorites`} onClick={() => {
-                window.scrollTo(0, 0)
-              }}>
-                Añadir a Favoritos
-              </Link>
+            <Button onClick={HandleClick}>
+              Añadir a Favoritos
             </Button>
           </AddContainer>
         </InfoContainer>
