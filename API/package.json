@@ -27,6 +27,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.4",
     "nodemon": "^2.0.15",
-    "yarn": "^1.22.18"
+    "yarn": "^1.22.18",
+    "react-redux": "^7.2.6",
+    "redux-persist": "^6.0.0"
   }
 }
