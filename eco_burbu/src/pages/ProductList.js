@@ -20,7 +20,7 @@ const Title = styled.h1`
 const ProductList = () => {
     const location = useLocation();
     const cat = location.pathname.split("/")[2];
-    const [filters, setFilters] = useState({});
+/*    const [filters, setFilters] = useState({});
     const [sort, setSort] = useState("newest");
 
     const handleFilters = (e) => {
@@ -30,14 +30,14 @@ const ProductList = () => {
             [e.target.name]: value,
         });
     };
-
+*/
 
     return (
         <Container>
             <Navbar />
             <Announcement />
             <Title>{cat}</Title>
-            <Products cat={cat} filters={filters} sort={sort} />
+            <Products cat={cat} />
             <Footer />
         </Container>
     )

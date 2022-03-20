@@ -9,7 +9,6 @@ import {
   Route,
 } from "react-router-dom";
 import ProductList from "./pages/ProductList";
-import Favorites from "./pages/Favorites";
 
 
 
@@ -27,9 +26,6 @@ const App = () => {
         </Route>
         <Route path="/products/:category">
           <ProductList />
-        </Route>
-        <Route path="/Favorites">
-          <Favorites />
         </Route>
       </Switch>
       {register && <ModalRegister />}
