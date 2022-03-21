@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
     flex: 1;
     margin: 3px;
-    height: 70vh;
     position: relative;
 `;
 const Image = styled.img`
@@ -13,7 +12,7 @@ const Image = styled.img`
     object-fit: cover;
 `;
 const Title = styled.h1`
-    color: #FBF9F9;
+    color: #631EC0;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     padding: 0.2em 0.5em;
