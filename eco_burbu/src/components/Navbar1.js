@@ -42,7 +42,7 @@ const Imag = styled.img`
     flex: 2;
     max-width: 70%;
     image-rendering: pixelated;
-    ${mobile({ maxWidth: "110%" })}
+    ${mobile({ maxWidth: "250%" })}
 
 `;
 
@@ -64,7 +64,12 @@ const MenuItem = styled.button`
     margin-left: 25px;
     cursor: pointer;
     justify-content: flex-end;
-    ${mobile({ fontSize: "12px" })}
+    ${mobile({ fontSize: "16px" })}
+
+    a:link, a:visited, a:active {
+      text-decoration:none;
+      color: black;
+  }
 `;
 
 const SocialContainer = styled.div`
@@ -74,6 +79,9 @@ const SocialContainer = styled.div`
 const SocialIcon = styled.div`
     margin-right: 25px;
     color: #59351F;
+    a:visited {
+      color: black;
+    }
 `;
 
 
@@ -113,11 +121,11 @@ const Navbar = () => {
           <MenuItem>
             <Link to={"/"} onClick={() => { window.scrollTo(0, 0) }}>INICIO</Link>
           </MenuItem>
-          <MenuItem>
+          {/* <MenuItem>
             <Link to={"/Favorites"} onClick={() => { window.scrollTo(0, 0) }}>FAVORITOS</Link>
-          </MenuItem>
-          <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
-          <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem>
+          </MenuItem> */}
+          {/* <MenuItem onClick={() => dispatch(set({ key: 'register', value: true }))}>REGISTRO</MenuItem>
+          <MenuItem onClick={() => dispatch(set({ key: 'signIn', value: true }))}>INGRESAR</MenuItem> */}
         </Right>
       </Wrapper>
     </Container >

@@ -23,10 +23,9 @@ const Left = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
-    margin-left: 150px;
     ${mobile({
     flexDirection: "column", display: "flex", alignItems: "center",
-    justifyContent: "center", marginLeft: "50px"
+    justifyContent: "center", marginLeft: "0px", padding: "0 20px"
 })}
 `;
 const Right = styled.div`
@@ -38,11 +37,12 @@ const Imag = styled.img`
     height: 50%;
     display: flex;
     border-radius:10em;
-    ${mobile({ width: "100%", borderRadius: "50%" })}
+    ${mobile({ width: "70%", borderRadius: "50%" })}
 `;
 const SocialContainer = styled.div`
     display: flex;
-    ${mobile({ padding: "0px 120px 0px 0px" })}
+    justify-content: center;
+    ${mobile({ padding: "0px" })}
 `;
 const SocialIcon = styled.div`
     width: 50px;
@@ -53,7 +53,10 @@ const SocialIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin: 0 10px;
+    a:visited {
+        color: white;
+      }
 `;
 const Logo = styled.div`
 
@@ -61,13 +64,15 @@ const Logo = styled.div`
     flex-wrap: wrap;
     margin-bottom: 50px;
     image-rendering: pixelated;
-    ${mobile({ padding: "20px 50px 0px 50px", justifyContent: "right" })}
+    justify-content: center;
+    ${mobile({ padding: "0px 50px", justifyContent: "center" })}
 `;
 
 const Descrip = styled.p`
     margin: 20px 0px;
     font-family: cursive;
     font-size: 120%;
+    text-align: justify;
 `;
 const Title = styled.h2`
     margin-bottom: 30px;

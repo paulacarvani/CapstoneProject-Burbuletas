@@ -47,14 +47,14 @@ const Price = styled.span`
   font-size: 40px;
 `;
 
-const AddContainer = styled.div`
-  padding-top: 50px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  ${mobile({ width: "100%" })}
-`;
+// const AddContainer = styled.div`
+//   padding-top: 50px;
+//   width: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   ${mobile({ width: "100%" })}
+// `;
 
 const Button = styled.button`
   padding: 15px;
@@ -86,8 +86,8 @@ const Product = () => {
 
   return (
     <Container>
+      <Announcement />      
       <Navbar1 />
-      <Announcement />
       <Wrapper>
         <ImgContainer>
           <Image src={product.image}/>
@@ -102,11 +102,11 @@ const Product = () => {
           <Price>
             {product.price}
           </Price>
-          <AddContainer>
+          {/* <AddContainer>
             <Button>
               Añadir a Favoritos
             </Button>
-          </AddContainer>
+          </AddContainer> */}
         </InfoContainer>
       </Wrapper>
       <Footer />

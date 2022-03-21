@@ -133,8 +133,8 @@ const SummaryItemPrice = styled.span``;
 const Favorites = () => {
     return (
         <Container>
-            <Navbar />
             <Announcement />
+            <Navbar />
             <Wrapper>
                 <Title>
                     Favoritos

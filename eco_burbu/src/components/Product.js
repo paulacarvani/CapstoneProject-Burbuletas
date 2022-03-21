@@ -78,9 +78,9 @@ const Product = ({ item }) => {
             <Search />
           </Link>
         </Icon>
-        <Icon>
+        {/* <Icon>
             <FavoriteBorder />
-        </Icon>
+        </Icon> */}
       </Info>
     </Container>
   );

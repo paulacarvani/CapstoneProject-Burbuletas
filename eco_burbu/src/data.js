@@ -29,7 +29,7 @@ export const Categorias = [
     desc: "Cactus",
     id: 1,
     title: "Cactus",
-    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    img: "https://imagenes-burbuletas.sfo3.digitaloceanspaces.com/28.jpg",
     background: "#ffdec8",
     cat: "Cactus"
   },
@@ -37,7 +37,7 @@ export const Categorias = [
     desc: "Materitas",
     id: 2,
     title: "Materitas",
-    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    img: "https://imagenes-burbuletas.sfo3.digitaloceanspaces.com/27.jpg",
     background: "#ffdec8",
     cat: "Materitas"
   },
@@ -45,7 +45,7 @@ export const Categorias = [
     desc: "Suculentas",
     id: 3,
     title: "Suculentas",
-    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    img: "https://imagenes-burbuletas.sfo3.digitaloceanspaces.com/29.jpg",
     background: "#ffdec8",
     cat: "Suculentas"
   },
@@ -53,7 +53,7 @@ export const Categorias = [
     desc: "Animalitos",
     id: 4,
     title: "Animalitos",
-    img: "https://i.postimg.cc/MGrwGQ1F/base-Categorias.jpg",
+    img: "https://imagenes-burbuletas.sfo3.digitaloceanspaces.com/26.jpg",
     background: "#ffdec8",
     cat: "Animalitos"
   },

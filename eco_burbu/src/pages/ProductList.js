@@ -34,8 +34,8 @@ const ProductList = () => {
 
     return (
         <Container>
-            <Navbar />
             <Announcement />
+            <Navbar />
             <Title>{cat}</Title>
             <Products cat={cat} />
             <Footer />
