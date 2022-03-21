@@ -111,7 +111,9 @@ const Footer = () => {
                         </a>
                     </SocialIcon>
                     <SocialIcon color="8FD355">
-                        <WhatsApp fontSize="large" />
+                        <a href="https://wa.link/6xkf8s" target="_blank">
+                            <WhatsApp fontSize="large" />
+                        </a>
                     </SocialIcon>
                 </SocialContainer>
             </Center>

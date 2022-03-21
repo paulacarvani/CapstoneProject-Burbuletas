@@ -29,6 +29,10 @@ const Button = styled.button`
     font-weight: 600;
     box-shadow: 0px 0px 0px 0.5px coral;
     border-radius: 1em;
+    
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
 `;
 
 const Info = styled.div`
