@@ -22,9 +22,10 @@ const Left = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
-    margin-left: 150px;
-    ${mobile({ flexDirection: "column", display: "flex", alignItems: "center",
-    justifyContent: "center", marginLeft: "50px" })}
+    ${mobile({
+    flexDirection: "column", display: "flex", alignItems: "center",
+    justifyContent: "center", marginLeft: "0px", padding: "0 20px"
+})}
 `;
 const Right = styled.div`
     flex: 1;
@@ -34,12 +35,13 @@ const Imag = styled.img`
     width: 50%;
     height: 50%;
     display: flex;
-    border-radius:5em;
-    ${mobile({ width: "100%", borderRadius: "50%" })}
+    border-radius:10em;
+    ${mobile({ width: "70%", borderRadius: "50%" })}
 `;
 const SocialContainer = styled.div`
     display: flex;
-    ${mobile({ padding: "0px 120px 0px 0px" })}
+    justify-content: center;
+    ${mobile({ padding: "0px" })}
 `;
 const SocialIcon = styled.div`
     width: 50px;
@@ -50,7 +52,10 @@ const SocialIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin: 0 10px;
+    a:visited {
+        color: white;
+      }
 `;
 const Logo = styled.div`
 
@@ -58,13 +63,15 @@ const Logo = styled.div`
     flex-wrap: wrap;
     margin-bottom: 50px;
     image-rendering: pixelated;
-    ${mobile({ padding: "20px 50px 0px 50px", justifyContent: "right" })}
+    justify-content: center;
+    ${mobile({ padding: "0px 50px", justifyContent: "center" })}
 `;
 
 const Descrip = styled.p`
     margin: 20px 0px;
     font-family: cursive;
     font-size: 120%;
+    text-align: justify;
 `;
 const Title = styled.h2`
     margin-bottom: 30px;
@@ -77,46 +84,52 @@ const ContactItem = styled.div`
 `;
 
 const Footer = () => {
-  return (
-    <Container>
-        <Left>
-            <Title>Burbuletas</Title>
-            <Descrip>
-                "Cultivo plantas por muchas razones: para complacer mi ojo o mi alma,
-                desafiar los elementos o desafiar mi paciencia, por novedad o por nostalgia,
-                pero principalmente por la alegría de verlas crecer." – David Hobson 
-            </Descrip>
-        </Left>
-        <Center>
-            <Logo>
-                <Imag src="https://i.postimg.cc/sgY6NTJ1/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"></Imag>
-            </Logo>
-            <SocialContainer>
-                <SocialIcon color="3B5999">
-                    <Facebook fontSize="large"  />
-                </SocialIcon >
-                <SocialIcon color="E4405F">
-                    <Instagram fontSize="large"  />
-                </SocialIcon>
-                <SocialIcon color="8FD355">
-                    <WhatsApp fontSize="large"  />
-                </SocialIcon>
-            </SocialContainer>
-        </Center>
-        <Right>
-            <Title>Contacto</Title>
-            <ContactItem><Map style={{marginRight:"10px"}}/>
-                Sevilla-Roldanillo - Colombia
-            </ContactItem>
-            <ContactItem><PhoneAndroidOutlined style={{marginRight:"10px"}}/>
-                +57 317 425 49 20
-            </ContactItem>
-            <ContactItem><Email style={{marginRight:"10px"}}/>
-                burbuletas@gmail.com
-            </ContactItem>
-        </Right>
-    </Container>
-  )
+    return (
+        <Container>
+            <Left>
+                <Title>Burbuletas</Title>
+                <Descrip>
+                    "Cultivo plantas por muchas razones: para complacer mi ojo o mi alma,
+                    desafiar los elementos o desafiar mi paciencia, por novedad o por nostalgia,
+                    pero principalmente por la alegría de verlas crecer." – David Hobson
+                </Descrip>
+            </Left>
+            <Center>
+                <Logo>
+                    <Imag src="https://i.postimg.cc/sgY6NTJ1/45f92fbd-d7cf-4987-8c42-ec32a0023f6c.jpg"></Imag>
+                </Logo>
+                <SocialContainer>
+                    <SocialIcon color="3B5999">
+                        <a href="https://web.facebook.com/11Burbuletas" target="_blank">
+                            <Facebook href="https://web.facebook.com/11Burbuletas" fontSize="large" />
+                        </a>
+                    </SocialIcon >
+                    <SocialIcon color="E4405F">
+                        <a href="https://www.instagram.com/burbuletas1/" target="_blank">
+                            <Instagram fontSize="large" />
+                        </a>
+                    </SocialIcon>
+                    <SocialIcon color="8FD355">
+                        <a href="https://wa.link/6xkf8s" target="_blank">
+                            <WhatsApp fontSize="large" />
+                        </a>
+                    </SocialIcon>
+                </SocialContainer>
+            </Center>
+            <Right>
+                <Title>Contacto</Title>
+                <ContactItem><Map style={{ marginRight: "10px" }} />
+                    Sevilla-Roldanillo - Colombia
+                </ContactItem>
+                <ContactItem><PhoneAndroidOutlined style={{ marginRight: "10px" }} />
+                    +57 317 425 49 20
+                </ContactItem>
+                <ContactItem><Email style={{ marginRight: "10px" }} />
+                    burbuletas@gmail.com
+                </ContactItem>
+            </Right>
+        </Container>
+    )
 }
 
 export default Footer;
