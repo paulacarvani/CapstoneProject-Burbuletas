@@ -64,7 +64,7 @@ const MenuItem = styled.button`
     margin-left: 25px;
     cursor: pointer;
     justify-content: flex-end;
-    ${mobile({ fontSize: "16px" })}
+    ${mobile({ fontSize: "13px" })}
 
     a:link, a:visited, a:active {
       text-decoration:none;

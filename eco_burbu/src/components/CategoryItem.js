@@ -1,10 +1,13 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     flex: 1;
     margin: 3px;
     position: relative;
+    ${mobile({ height: "0%" })}
+
 `;
 const Image = styled.img`
     width: 100%;
@@ -18,6 +21,7 @@ const Title = styled.h1`
     padding: 0.2em 0.5em;
     border-radius: 05em;
     box-shadow: 0px 0px 0px 0.5px;
+    ${mobile({ fontSize: "small" })}
 `;
 
 const Button = styled.button`
@@ -33,6 +37,8 @@ const Button = styled.button`
     a:link, a:visited, a:active {
         text-decoration:none;
     }
+
+    ${mobile({ fontSize: "x-small", padding: "revert" })}
 `;
 
 const Info = styled.div`

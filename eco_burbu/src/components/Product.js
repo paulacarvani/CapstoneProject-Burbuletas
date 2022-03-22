@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Search, FavoriteBorder } from '@mui/icons-material/';
 import { Link } from "react-router-dom";
+import { mobile } from "../responsive";
 
 
 const Info = styled.div`
@@ -30,6 +31,8 @@ const Container = styled.div`
   background-color: #FCF1EA;
   position: relative;
 
+  ${mobile({ height: "30vh", minWidth: "40vw" })}
+
   &:hover ${Info}{
     opacity: 1;
   }
@@ -41,11 +44,13 @@ const Circle = styled.div`
   border-radius: 50%;
   background-color: #FFDAC1;
   position: absolute;
+  ${mobile({ display: "none" })}
 `;
 
 const Image = styled.img`
   height: 75%;
   z-index: 2;
+  ${mobile({ height: "20vh" })}
 `;
 
 const Icon = styled.div`
