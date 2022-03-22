@@ -31,7 +31,7 @@ const Container = styled.div`
   background-color: #FCF1EA;
   position: relative;
 
-  ${mobile({ height: "30vh", minWidth: "40vw" })}
+  ${mobile({ height: "25vh", minWidth: "40vw" })}
 
   &:hover ${Info}{
     opacity: 1;

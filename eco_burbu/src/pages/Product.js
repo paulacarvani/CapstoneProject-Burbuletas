@@ -19,12 +19,13 @@ const Wrapper = styled.div`
 
 const ImgContainer = styled.div`
   flex: 1;
+  ${mobile({ display: "flex", alingnItems: "center", justifyContent: "center" })}
 `;
 
 const Image = styled.img`
   width: 100%;
   object-fit: cover;
-  ${mobile({ width: "100%" })}
+  ${mobile({ width: "70%" })}
 `;
 
 const InfoContainer = styled.div`
@@ -34,17 +35,20 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-style: italic;
+  ${mobile({ display: "flex", alingnItems: "center", justifyContent: "center" })}
 `;
 
 const Desc = styled.p`
   margin: 20px 0px;
-  font-weight: 100;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  ${mobile({ display: "flex", alingnItems: "center", justifyContent: "center" })}
 `;
 
 const Price = styled.span`
   font-weight: 100;
-  font-size: 40px;
+  font-size: 30px;
+  ${mobile({ display: "flex", alingnItems: "center", justifyContent: "center" })}
 `;
 
 // const AddContainer = styled.div`
