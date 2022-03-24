@@ -5,10 +5,11 @@ import CategoryItem from "./CategoryItem"
 
 const Container = styled.div`
     display: flex;
+    align-items: center;
     padding: 20px;
     justify-content: space-between;
     margin-top: 50px;
-    ${mobile({ padding: "0px", flexDirection: "inherit", marginTop: "20px" })}
+    ${mobile({ padding: "0px", flexDirection: "inherit", marginTop: "20px", display: "Flex", alignItems: "Center" })}
 `;
 
 const Categories = () => {
